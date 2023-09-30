@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import PersonalityTypes
 
 # Create your views here.
 
@@ -8,4 +9,6 @@ def home(request):
 
 
 def personalityTest(request):
-    return render(request,'PersonalityTypes.html')
+   
+    allTypes=PersonalityTypes.objects.all()
+    return render(request,'PersonalityTypes.html',{'alltypes':allTypes})

@@ -505,15 +505,17 @@
         <div class="wedd-gall wedd-gall-pg">
             <div class="">
                 <div class="gall-inn">
+                    {% for type in alltypes%}
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="gal-im animate animate__animated animate__slow animate__flipInX anistart">
-                            <img src="{% static '/images/gallery/1.jpg' %}" class="gal-siz-1" alt="" loading="lazy">
+                            <img src={{type.type_image.url}} class="gal-siz-1" alt="img" loading="lazy">
                             <div class="txt">
-                                <span>Wedding</span>
+                                <span>{{type.Typename}}</span>
                                 <h4>Bride & Groom</h4>
                             </div>
                         </div>
-                        <div class="gal-im animate animate__animated animate__slower" data-ani="animate__flipInX">
+                        
+                        <!-- <div class="gal-im animate animate__animated animate__slower" data-ani="animate__flipInX">
                             <img src="images/gallery/9.jpg" class="gal-siz-1" alt="" loading="lazy">
                             <div class="txt">
                                 <span>Wedding</span>
@@ -663,8 +665,9 @@
                                 <span>Wedding</span>
                                 <h4>Bride & Groom</h4>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
