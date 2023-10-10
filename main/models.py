@@ -9,3 +9,5 @@ class PersonalityTypes(models.Model):
     typeshort_name = models.CharField(max_length=50)
     TypeDescription = models.CharField(max_length=200)
     type_image = models.ImageField()
+
+    
