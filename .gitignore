@@ -142,3 +142,6 @@ GitHub.sublime-settings
 # Mindmatch/settings.py
 #VIRTUAL ENV pushed back error here
 virtualenv/
+
+#awskey
+awskey
