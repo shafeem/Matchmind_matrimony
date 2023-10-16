@@ -171,7 +171,7 @@ USE_TZ = True
 #aws static file configuration
 AWS_STORAGE_BUCKET_NAME = 'mindmatch'
 AWS_ACCESS_KEY_ID = 'AKIAZNF5UGMZQH2UUZMW'
-AWS_SECRET_ACCESS_KEY = 'your-secret-access-key'
+AWS_SECRET_ACCESS_KEY = 'ekFsK0+JKQ+srh7eZqgOmL+zNpxExHAfVtvlbNiJ'
 AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
 AWS_DEFAULT_ACL = 'public-read'
 
