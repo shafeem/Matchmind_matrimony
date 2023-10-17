@@ -74,9 +74,9 @@ DATABASES = {
 }
 
 
-# STATICFILES_DIRS = [
-#      BASE_DIR / "Static_Files"
-#  ]
+STATICFILES_DIRS = [
+     BASE_DIR / "Static_Files"
+ ]
 
 
 # Password validation
@@ -113,15 +113,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-# STATIC_URL = '/static/'
 
-# MEDIA_URL = '/media/'
 
-# if DEBUG:
-#     STATICFILES_DIRS =[os.path.join(BASE_DIR),'static']
+STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 
-# else:
-#     STATIC_ROOT = os.path.join(BASE_DIR,'Static_Files')
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'main/static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+
 
 # STORAGES = {
 #     "default": {
@@ -169,25 +172,25 @@ USE_TZ = True
 
 # ...
 #aws static file configuration
-AWS_STORAGE_BUCKET_NAME = 'mindmatch'
-AWS_ACCESS_KEY_ID = 'AKIAZNF5UGMZQH2UUZMW'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
-AWS_DEFAULT_ACL = 'public-read'
+# AWS_STORAGE_BUCKET_NAME = 'mindmatch'
+# AWS_ACCESS_KEY_ID = 'AKIAZNF5UGMZQH2UUZMW'
+# AWS_SECRET_ACCESS_KEY = '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'
+# AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
+# AWS_DEFAULT_ACL = 'public-read'
 
-STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/static/"
-MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/media/"
+# STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/static/"
+# MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/media/"
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_LOCATION = 'media'
+# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# AWS_LOCATION = 'media'
 
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-if DEBUG:
-    STATICFILES_DIRS = [BASE_DIR / "static"]
-else:
-    STATIC_ROOT = os.path.join(BASE_DIR, 'Static_Files')
+# if DEBUG:
+#     STATICFILES_DIRS = [BASE_DIR / "static"]
+# else:
+#     STATIC_ROOT = os.path.join(BASE_DIR, 'Static_Files')
 
-MEDIA_ROOT = ''
+# MEDIA_ROOT = ''
 
 # ...
