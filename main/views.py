@@ -26,3 +26,11 @@ def personalityTest(request):
     
 
     return render(request,'PersonalityTest.html',{'questin_dict':questin_dict})
+
+
+
+def AllProfiles(request):
+    return render(request,'all-profiles.html')
+
+def aboutpage(request):
+    return render(request,'about.html')

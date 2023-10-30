@@ -64,7 +64,7 @@
                 <div class="lhs">
                     <ul>
                         <li><a href="#!" class="ser-open"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -216,8 +216,9 @@
                     <div class="bl">
                         <ul>
                             <li class="smenu-pare">
-                                <span class="smenu">Explore</span>
-                                <div class="smenu-open smenu-box">
+                                <a href="{% url 'home' %}"><span>Home</span></a>
+
+                                <!-- <div class="smenu-open smenu-box">
                                     <div class="container">
                                         <div class="row">
                                             <h4 class="tit">Explore category</h4>
@@ -253,11 +254,11 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </li>
                             <li class="smenu-pare">
-                                <span class="smenu">All pages</span>
-                                <div class="smenu-open smenu-multi">
+                                <a href="{% url 'allProfiles' %}"><span>All Profile</span></a>
+                                <!-- <div class="smenu-open smenu-multi">
                                     <div class="container">
                                         <div class="row">
                                             <div class="multi-col">
@@ -289,7 +290,7 @@
                                                     <h4>Page sets 3</h4>
                                                     <ul>
                                                         <li><a href="contact.html">Contact</a></li>
-                                                        <li><a href="about.html">About</a></li>
+                                                        <li><a href="{% url 'about' %}">About</a></li>
                                                         <li><a href="blog.html">Blog</a></li>
                                                         <li><a href="blog-detail.html">Blog detail</a></li>
                                                     </ul>
@@ -310,9 +311,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </li>
-                            <li><a href="{% url 'toppages' %}">Top pages</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
                                 <!-- <span class="smenu">Top pages</span>
                                 <div class="smenu-open smenu-single">
                                     <ul>
@@ -332,8 +333,8 @@
                                 </div> -->
                             </li>
                             <li><a href="plans.html">Plans</a></li>
-                            <li><a href="login.html">Sign in</a></li>
-                            <li><a href="sign-up.html">Register</a></li>
+                            <li><a href="#">Sign in</a></li>
+                            <li><a href="#">Register</a></li>
                         </ul>
                     </div>
 
@@ -341,9 +342,8 @@
                     <div class="al">
                         <div class="head-pro">
                             <img src="{% static 'images/profiles/1.jpg' %}" alt="" loading="lazy">
-                            <b>Advisor</b><br>
-                            <h4>Ashley emyy</h4>
-                            <span class="fclick"></span>
+                            <a href="{% url 'taketest'%}">Personality Test</a>
+                            <!-- <span class="fclick"></span> -->
                         </div>
                     </div>
 
@@ -392,7 +392,7 @@
                 <li><a href="photo-gallery.html">Photo gallery</a></li>
                 <li><a href="photo-gallery-1.html">Photo gallery 1</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="blog-detail.html">Blog detail</a></li>
                 <li><a href="enquiry.html">Ask your doubts</a></li>
