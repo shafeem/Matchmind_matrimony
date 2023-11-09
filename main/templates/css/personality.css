@@ -1,0 +1,116 @@
+.personality-ban {
+  padding: 180px 0px 220px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  /* background: linear-gradient(to right, rgb(137, 33, 107), rgb(218, 68, 83)); */
+  overflow: hidden;
+  /* float: left; */
+  width: 100%;
+  position: relative;
+  background-image: url(../image/image.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+/* .personality-ban::before,
+.personality-ban::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  animation: zoomout 5s infinite linear both;
+} */
+
+/* .personality-ban::before {
+  left: -120px;
+  top: -75px;
+  width: 350px;
+  height: 350px;
+  background: rgb(158, 42, 101);
+} */
+
+/* .personality-ban::after {
+  right: -120px;
+  bottom: -75px;
+  width: 350px;
+  height: 350px;
+  background: rgb(218, 68, 83);
+} */
+
+/* .personality-ban .container {
+  position: relative;
+  z-index: 1;
+} */
+
+/* .personality-ban span.pri {
+  margin: 0px auto;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+} */
+
+.personality-ban h1 {
+  width: 100%;
+  font-size: 52px;
+  font-weight: 600;
+  padding: 15px 0px;
+  color: #fff;
+}
+
+.personality-ban p {
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  color: #f3f3f3;
+}
+
+/* .personality-ban span.nocre {
+  margin: 0px auto;
+  background: rgb(219, 33, 76);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 25px;
+  color: #fff;
+} */
+
+.currYbtn{
+  font-size: 20px;
+  font-weight: 500;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.currNbtn{
+  font-size: 20px;
+  font-weight: 500;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.divGap{
+  column-gap: 10px;
+  padding-top: 10px;
+}
+.prevButton {
+  margin-top: 20px; 
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  color: white;
+  /* text-align: center; */
+  line-height: 60px;
+  cursor: pointer;
+
+}
+
+.ulBack{
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+}
