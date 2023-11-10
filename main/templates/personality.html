@@ -665,54 +665,57 @@
     <section>
       <div class="plans-main">
         <div class="container">
-          <div class="row">
-            <!-- plans-ban removed from ul from below -->
-            <ul class=" span.pri">
-              <li>
-                <div class="pri-box" id="prevDiv">
-                  <h2 id="prevIndex"></h2>
-                  <!-- <p>Printer took a type and scrambled </p> -->
+          <div class="row ">
+            <div class="">
+              <!-- plans-ban removed from ul from below -->
+              <ul class=" span.pri">
+                <li>
+                  <div class="pri-box" id="prevDiv">
+                    <h2 id="prevIndex"></h2>
+                    <!-- <p>Printer took a type and scrambled </p> -->
+  
+                    <span class="pri-cou"><b id="prevQuestion"></b></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="pri-box pri-box-pop">
+                    <h2 id="currIndex"></h2>
+                    <!-- <p>Printer took a type and scrambled </p> -->
+  
+                    <span class="pri-cou"><b id="currQuestion"></b></span>
+                    <ol>
+                      <div class="text-center row justify-content-center divGap">
+                        <div
+                          class="currYbtn btn-success"
+                          id="currY"
+                          onclick="indexIncrementer()"
+                        ></div>
+                        <div
+                          class="currNbtn btn-danger"
+                          id="currN"
+                          onclick="indexIncrementer()"
+                        ></div>
+                      </div>
+                      <button
+                        class="prevButton btn-dark"
+                        onclick="indexDecreaser()"
+                      >
+                        &lt;
+                      </button>
+                    </ol>
+                  </div>
+                </li>
+                <li>
+                  <div class="pri-box" id="nextDiv">
+                    <h2 id="nextIndex"></h2>
+                    <!-- <p>Printer took a type and scrambled </p> -->
+  
+                    <span class="pri-cou"><b id="nextQuestion"></b></span>
+                  </div>
+                </li>
+              </ul>
 
-                  <span class="pri-cou"><b id="prevQuestion"></b></span>
-                </div>
-              </li>
-              <li>
-                <div class="pri-box pri-box-pop">
-                  <h2 id="currIndex"></h2>
-                  <!-- <p>Printer took a type and scrambled </p> -->
-
-                  <span class="pri-cou"><b id="currQuestion"></b></span>
-                  <ol>
-                    <div class="text-center row justify-content-center divGap">
-                      <div
-                        class="currYbtn btn-success"
-                        id="currY"
-                        onclick="indexIncrementer()"
-                      ></div>
-                      <div
-                        class="currNbtn btn-danger"
-                        id="currN"
-                        onclick="indexIncrementer()"
-                      ></div>
-                    </div>
-                    <button
-                      class="prevButton btn-dark"
-                      onclick="indexDecreaser()"
-                    >
-                      &lt;
-                    </button>
-                  </ol>
-                </div>
-              </li>
-              <li>
-                <div class="pri-box" id="nextDiv">
-                  <h2 id="nextIndex"></h2>
-                  <!-- <p>Printer took a type and scrambled </p> -->
-
-                  <span class="pri-cou"><b id="nextQuestion"></b></span>
-                </div>
-              </li>
-            </ul>
+            </div>
           </div>
         </div>
       </div>
